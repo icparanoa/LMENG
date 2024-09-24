@@ -42,14 +42,14 @@
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
             <a href="index.html" class="logo d-flex align-items-center">
-                <img src="assets/img/icone.png" alt="">
+                <img src="../assets/img/icone.png" alt="">
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">Sobre-nós</a></li>
-                    <li class="dropdown"><a href="#services"><span>Serviços</span> <i
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../index.html#details">Sobre-nós</a></li>
+                    <li class="dropdown"><a href="../index.html#services"><span>Serviços</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="./servicos/elaboracao.html">ELABORAÇÃO DE PROJETOS</a></li>
@@ -278,98 +278,102 @@
             </div>
         </section><!-- End Info Box Section -->
 
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
 
-                <div class="section-title" data-aos="zoom-out">
-                    <h2>Contato</h2>
-                </div>
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contato</h2>
+                <div><span>Fale com a gente</span></div>
+            </div><!-- End Section Title -->
+
+            <div id="contato" class="container" data-aos="fade" data-aos-delay="100">
 
                 <div>
                     <iframe style="border:0; width: 100%; height: 270px; border-radius: 15px;"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3758.9306047185396!2d-46.943463!3d-19.5874735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b036de55f85555%3A0x61acbbe1c4851d56!2sSEF%20ENGENHARIA%20LTDA!5e0!3m2!1spt-PT!2sbr!4v1718853343512!5m2!1spt-PT!2sbr"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14622.464774190723!2d-46.698082!3d-23.6180939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c5613fe59d%3A0x15f4714e0bf6ce55!2sLMENG!5e0!3m2!1spt-BR!2sbr!4v1727175925007!5m2!1spt-BR!2sbr"
                         frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <div class="row mt-5">
 
                     <div class="col-lg-4">
-                        <div class="info">
-                            <div class="address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Localização:</h4>
-                                <p>R. Manoel Francisco, 174
-                                    Bairro São Pedro, Araxá - MG</p>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>A108 Adam Street, New York, NY 535022</p>
                             </div>
+                        </div><!-- End Info Item -->
 
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p> <a
-                                        href="mailto:contato@sefltdaengenharia.com.br">contato@sefltdaengenharia.com.br</a>
-                                </p>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+1 5589 55488 55</p>
                             </div>
+                        </div><!-- End Info Item -->
 
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Telefone:</h4>
-                                <p> <a
-                                        href="https://api.whatsapp.com/send/?phone=5534988043722&text&type=phone_number&app_absent=0">
-                                        (34) 98804-3722</a>
-                                </p>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@example.com</p>
                             </div>
-
-                        </div>
+                        </div><!-- End Info Item -->
 
                     </div>
 
-                    <div class="col-lg-8 mt-5 mt-lg-0">
-                        <form action="./assets/forms/contact.php" method="post">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nome"
-                                        required>
+                    <div class="col-lg-8">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                        required="">
                                 </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="text" name="sobrenome" class="form-control" id="sobrenome"
-                                        placeholder="Sobrenome">
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        required="">
                                 </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                        required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Send Message</button>
+                                </div>
+
                             </div>
-                            <div class="form-group mt-3">
-                                <input type="number" class="form-control" name="telefone" id="telefone"
-                                    placeholder="Telefone\Whatsapp" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
-                                    required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Titulo"
-                                    required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Mensagem"
-                                    required></textarea>
-                            </div>
-                            <br>
-                            <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
                         </form>
-
-                    </div>
+                    </div><!-- End Contact Form -->
 
                 </div>
 
             </div>
-        </section><!-- End Contact Section -->
+
+        </section><!-- /Contact Section -->
 
     </main><!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
+    <footer id="footer" class="footer dark-background">
         <div class="container">
-            <img src="../assets/img/logo/branca.png" alt="">
+            <img src="../assets/img/icone.png" alt="">
             <div class="copyright">
-                &copy; Copyright <strong><span>S&F Engenharia</span></strong>. Todos os Direitos Reservados
+                &copy; Copyright <strong><span>LMENG</span></strong>. Todos os Direitos Reservados
             </div>
             <div class="credits">
                 Projetado por <a href="https://www.instagram.com/mwdigitalmkt/">MW Digital</a>
@@ -377,8 +381,12 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
     <script src="../assets/vendor/aos/aos.js"></script>
