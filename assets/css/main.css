@@ -1497,7 +1497,18 @@ section,
 
 .services .service-item h4 a {
   color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.services .service-item a {
+  color: var(--heading-color);
   transition: ease-in-out 0.3s;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 18px;
 }
 
 .services .service-item p {
@@ -1509,9 +1520,11 @@ section,
 
 .services .service-item:hover h4 a,
 .services .service-item:hover .icon i,
-.services .service-item:hover p {
+.services .service-item:hover p,
+.services .service-item:hover a {
   color: var(--contrast-color);
 }
+
 
 .services .service-item:hover:before {
   background: var(--accent-color);
