@@ -954,6 +954,33 @@ section,
   margin-bottom: 0;
 }
 
+.details .features-item .btn-read-more {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.details .features-item .btn-read-more span {
+  font-family: var(--default-font);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.details .features-item .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.details .features-item .btn-read-more:hover i {
+  transform: translateX(5px);
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -1512,8 +1539,6 @@ section,
     padding-bottom: 30px;
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # Services Section
