@@ -626,7 +626,7 @@ h6 {
 .breadcrumbs {
   border-top: 3px solid var(--accent-color);
   padding: 15px 0;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 15px;
   background: #f7f8f9;
   min-height: 40px;
@@ -637,7 +637,7 @@ h6 {
   font-size: 28px;
   font-weight: 400;
   margin: 0;
-  font-family: Waffle;
+  font-family: Helvetica;
 }
 
 .breadcrumbs ol {
@@ -989,35 +989,22 @@ section,
   width: 100%;
 }
 
-.stats .stats-item span {
+ .stats .stats-item span {
   color: var(--heading-color);
   font-size: 48px;
-  display: block;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
+  border-bottom: 3px solid var(--accent-color);
 }
 
-.stats .stats-item span:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
 
 .stats .stats-item p {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   padding: 0;
   margin: 0;
-  font-family: var(--heading-font);
-  font-weight: 500;
+  font-family: helvetica;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 /*--------------------------------------------------------------
