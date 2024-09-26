@@ -1320,7 +1320,7 @@ section,
 }
 
 .info-box .content {
-  padding: 60px 100px 0 100px;
+  padding: 30px 100px 0 100px;
 }
 
 .info-box .content_fim {
@@ -1330,13 +1330,14 @@ section,
 .info-box .content h3 {
   font-weight: 400;
   font-size: 36px;
-  font-family: Waffle;
+  font-family: Helvetica;
 }
 
 .info-box .content h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
+  font-family: Helvetica;
 }
 
 .info-box .content p {
