@@ -50,6 +50,7 @@
     });
   });
 
+
   /**
    * Preloader
    */
@@ -59,6 +60,12 @@
       preloader.remove();
     });
   }
+
+  /**
+* Initiate Pure Counter
+*/
+  new PureCounter();
+
 
   /**
    * Scroll top button

@@ -1,8 +1,8 @@
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Helvetica";
+  --heading-font: "Helvetica";
+  --nav-font: "Helvetica";
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -707,29 +707,50 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 30px;
   position: relative;
 }
 
 .section-title h2 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  padding: 10px 20px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
-  color: var(--accent-color);
-  border-radius: 7px;
-  display: inline-block;
-}
-
-.section-title div {
-  color: var(--heading-color);
-  margin: 0;
-  margin: 0;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: var(--heading-font);
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 4px;
+  color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .section-title span {
+    font-size: 38px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -931,6 +952,45 @@ section,
 
 .details .features-item p:last-child {
   margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats .stats-item {
+  padding: 30px;
+  width: 100%;
+}
+
+.stats .stats-item span {
+  color: var(--heading-color);
+  font-size: 48px;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.stats .stats-item span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.stats .stats-item p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  padding: 0;
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -1343,6 +1403,7 @@ section,
 .info-box .content p {
   font-size: 14px;
   color: #000000;
+  font-family: Helvetica;
 }
 
 .info-box .img-fluid {
@@ -1494,6 +1555,7 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  font-family: Helvetica;
 }
 
 .services .service-item h4 a {
@@ -1501,6 +1563,7 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  font-family: Helvetica;
 }
 
 .services .service-item a {
@@ -1510,6 +1573,7 @@ section,
   margin-top: 5px;
   margin-bottom: 25px;
   font-size: 18px;
+  font-family: Helvetica;
 }
 
 .services .service-item p {
@@ -1517,6 +1581,7 @@ section,
   font-size: 14px;
   margin-bottom: 0;
   transition: ease-in-out 0.3s;
+  font-family: Helvetica;
 }
 
 .services .service-item:hover h4 a,
