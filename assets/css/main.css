@@ -603,7 +603,7 @@ h6 {
   font-family: Helvetica;
 }
 
-.page-title .breadcrumbs ol {
+.page-title .about-breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -614,11 +614,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .about-breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .about-breadcrumbs ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
